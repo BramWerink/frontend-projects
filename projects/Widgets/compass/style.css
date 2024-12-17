@@ -1,5 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 .dark-wrapper{
     width:100vw;
     height: 100vh;
     background: black;
+}
+
+.compass{
+    width:10rem;
+    height: 10rem;
+    background:hsl(0, 0%, 10%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.compass .container-main{
+    background:hsl(0, 0%, 20%);
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    justify-items:center;
+    border-radius: 1rem;
+}
+
+.compass .container-main h2{
+    color: white;
 }
