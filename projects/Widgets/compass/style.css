@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;;
+
+}
+
+.dark-wrapper{
+    height: 100vh;
+    background: black;
+    padding: 10rem;
+}
+
+.compass{
+    width: 20rem;
+    height: 20rem;
+    background: hsl(0, 0%, 10%);
+    border-radius:2rem;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.compass #info{
+    color: white;
+    font-style: italic;
+    opacity: 0.5;
+    font-size: 0.5rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.5rem;
+}
+
+.compass .container{
+    background: hsl(0, 0%, 20%);
+    border-radius:1rem;
+}
+
+.compass .container.primary{
+    background: hsl(0, 0%, 20%);
+    flex: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compass .container.primary h2{
+   margin: 0;
+   color: white;
+   position: relative;
+   width: auto;
+   text-align: center;
+   font-size: 7.5rem;
+   font-weight: 600;
+   transition: opacity 0.3s ease-in-out; /* Smooth transition for text change */
+   opacity: 1;
+
+}
+
+.compass .container.secondary{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    justify-content: start;
+    align-items: end;
+    overflow-x: scroll;
+    scrollbar-color: hsl(0, 0%, 10%) hsl(0, 0%, 20%);;
+    scrollbar-width: thin;
+
+}
+
+
+
+.compass .container.secondary p{
+    color: white;
+    text-align: center;
+}
+
+.compass .container.secondary p.heading{
+    color:var(--red);
+}
+
+.compass .container.secondary .line{
+width: 1px;
+background:white;
+margin: auto;
+height: 1rem;
+flex: none;
+}
+
+.compass .container.secondary .line:nth-of-type(even){
+    height: 0.75rem;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
