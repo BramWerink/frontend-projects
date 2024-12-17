@@ -55,6 +55,7 @@ body{
     flex: 3;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-top: 2px solid hsl(0, 0%, 30%);
@@ -74,6 +75,10 @@ body{
    transition: opacity 0.3s ease-in-out; /* Smooth transition for text change */
    opacity: 1;
 
+}
+
+.compass .container.primary p{
+color: white;
 }
 
 .compass .container.secondary{
