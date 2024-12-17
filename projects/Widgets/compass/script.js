@@ -72,3 +72,18 @@ container.addEventListener('scroll', updateH2);
 
 // Initial call to set the h2 correctly on page load
 updateH2();
+
+
+
+function saveHeading(){
+let savedHeadingValue = document.getElementById('current-heading').textContent;
+let AutoPilotCounter = document.getElementById('saved-heading');
+AutoPilotCounter.textContent = savedHeadingValue;
+}
+
+
+
+
+function clearHeading(){
+    document.getElementById('saved-heading').textContent = "Unset"
+}

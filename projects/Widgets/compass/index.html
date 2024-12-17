@@ -15,14 +15,18 @@
         <div class="dark-wrapper">
             <div class="compass">
                 <div class="container primary">
-                    <h2></h2>
+                    <h2 id="current-heading"></h2>
+                    <p id="saved-heading"></p>
+                    <!-- ADD DIFFERENCE BETWEEN SAVED AND ACTUAL HEADING -->
                     <p id="info">use shift + scroll to scroll</p>
                 </div>
 
-                <div class="container secondary" id="scrollable">
+                <div class="container secondary" id="scrollable"></div>
+                <div class="container tertiary">
+                    <button onclick="saveHeading()">Set heading</button>
+                    <button onclick="clearHeading()">Clear</button>
 
                 </div>
-
             </div>
         </div>
         <script src="script.js"></script>
