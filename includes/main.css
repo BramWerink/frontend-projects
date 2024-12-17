@@ -1,0 +1,20 @@
+:root{
+    --main:#5751FF;
+    --cloudy:#EEEEFF;
+    --red:#E23636;
+    --orange:#FF9C00;
+    --yellow:#FFC800;
+    --green:#37B144;
+    --blue:#338ED0;
+    --body:#464646;
+    --border:#EBEBEB;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    padding:0;
+    margin: 0;
+}
