@@ -1,0 +1,174 @@
+body{
+    padding: 0;
+<<<<<<< HEAD
+    margin: 0;
+=======
+    margin: 0;;
+
+>>>>>>> 46ac1b283c69dd62968df759c1b672234725b8a6
+}
+
+.dark-wrapper{
+    height: 100vh;
+    background: black;
+<<<<<<< HEAD
+}
+
+.compass{
+    width:10rem;
+    height: 10rem;
+    background:hsl(0, 0%, 10%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.compass .container-main{
+    background:hsl(0, 0%, 20%);
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    justify-items:center;
+    border-radius: 1rem;
+}
+
+.compass .container-main h2{
+    color: white;
+}
+=======
+    padding: 10rem;
+}
+
+.compass{
+    width: 20rem;
+    height: 20rem;
+    background: hsl(0, 0%, 10%);
+    border-radius:2rem;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+
+
+}
+
+.compass #info{
+    color: white;
+    font-style: italic;
+    opacity: 0.5;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0.5rem;
+}
+
+.compass .container{
+    background: hsl(0, 0%, 20%);
+    border-radius:1rem;
+    /* box-shadow: inset 2px 2px 0px 0px hsl(0, 0%, 20%);
+     */
+     overflow: hidden;
+     
+
+     
+}
+
+
+
+.compass .container.primary{
+    background: hsl(0, 0%, 20%);
+    flex: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid hsl(0, 0%, 30%);
+    border-left: 2px solid hsl(0, 0%, 30%);
+    border-right: 2px solid hsl(0, 0%, 40%);
+    border-bottom: 2px solid hsl(0, 0%, 40%);
+}
+
+.compass .container.primary h2{
+   margin: 0;
+   color: white;
+   position: relative;
+   width: auto;
+   text-align: center;
+   font-size: 5rem;
+   font-weight: 600;
+   transition: opacity 0.3s ease-in-out; /* Smooth transition for text change */
+   opacity: 1;
+
+}
+
+.compass .container.secondary{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    justify-content: start;
+    align-items: end;
+    overflow-x: scroll;
+    scrollbar-color: hsl(0, 0%, 10%) hsl(0, 0%, 20%);;
+    scrollbar-width: thin;
+    border-radius:1rem 1rem 0 0;
+
+
+}
+
+
+
+.compass .container.secondary p{
+    color: white;
+    text-align: center;
+}
+
+.compass .container.secondary p.heading{
+    color:var(--red);
+}
+
+.compass .container.secondary .line{
+width: 1px;
+background:white;
+margin: auto;
+height: 1rem;
+flex: none;
+}
+
+.compass .container.secondary .line:nth-of-type(even){
+    height: 0.75rem;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.compass .container.tertiary{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    flex: 1;
+    background: none;
+}
+
+.compass .container.tertiary button{
+    flex: 1;
+    border-radius: 1rem;
+    border: none;
+
+
+}
+>>>>>>> 46ac1b283c69dd62968df759c1b672234725b8a6
