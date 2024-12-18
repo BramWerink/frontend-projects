@@ -4,7 +4,7 @@ body{
 }
 
 .wrapper{
-    background: var(--body);
+    background: var(--main);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -12,5 +12,11 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.time{
+    border-radius: 1rem;
+    padding: 2rem;
+    background: white;
 }
 
