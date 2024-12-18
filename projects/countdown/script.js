@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 function drawCompassLines() {
   const compass = document.getElementById("compass");
@@ -24,7 +23,6 @@ function drawCompassLines() {
 
 // Draw the compass lines when the page loads
 window.onload = drawCompassLines;
-=======
 const directions = ['0', '30', '60', '90', '120', '150', '180', '210', '240', '270', '300', '330'];
 const container = document.querySelector('.container.secondary');
 const h2 = document.querySelector('h2');
@@ -114,4 +112,3 @@ AutoPilotCounter.textContent = savedHeadingValue;
 function clearHeading(){
     document.getElementById('saved-heading').textContent = "Unset"
 }
->>>>>>> 46ac1b283c69dd62968df759c1b672234725b8a6
