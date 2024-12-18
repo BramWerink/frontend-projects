@@ -1,0 +1,12 @@
+Create Javascript CASIO F91W
+
+## Contains
+- Time
+
+- Days name
+
+- Backlight
+
+- Alarm
+
+- Hourly chime
