@@ -42,11 +42,7 @@ body{
 .compass .container{
     background: hsl(0, 0%, 20%);
     border-radius:1rem;
-    /* box-shadow: inset 2px 2px 0px 0px hsl(0, 0%, 20%);
-     */
-     overflow: hidden;
-     
-
+    overflow: hidden;
      
 }
 
