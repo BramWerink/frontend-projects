@@ -7,7 +7,9 @@ body{
 .dark-wrapper{
     height: 100vh;
     background: black;
-    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .compass{
@@ -52,9 +54,10 @@ body{
 
 .compass .container.primary{
     background: hsl(0, 0%, 20%);
-    flex: 3;
+    flex: 4;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-top: 2px solid hsl(0, 0%, 30%);
@@ -76,8 +79,12 @@ body{
 
 }
 
+.compass .container.primary p{
+color: white;
+}
+
 .compass .container.secondary{
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: row;
     gap:0.5rem;
@@ -135,8 +142,11 @@ flex: none;
 
 .compass .container.tertiary button{
     flex: 1;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: none;
+    transition: all 200ms ease;
+}
 
-
+.compass .container.tertiary button:hover{
+    background:#c9c9c9
 }
