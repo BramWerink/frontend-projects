@@ -12,44 +12,11 @@ body{
     align-items: center;
 }
 
-.compass{
-    width: 20rem;
-    height: 20rem;
-    background: hsl(0, 0%, 10%);
-    border-radius:2rem;
-    position: relative;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
 
 
 
-}
 
-.compass #info{
-    color: white;
-    font-style: italic;
-    opacity: 0.5;
-    font-size: 1rem;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 0.5rem;
-}
-
-.compass .container{
-    background: hsl(0, 0%, 20%);
-    border-radius:1rem;
-    overflow: hidden;
-     
-}
-
-
-
-.compass .container.primary{
-    background: hsl(0, 0%, 20%);
+.widget .container.primary{
     flex: 4;
     position: relative;
     display: flex;
@@ -62,24 +29,17 @@ body{
     border-bottom: 2px solid hsl(0, 0%, 40%);
 }
 
-.compass .container.primary h2{
-   margin: 0;
-   color: white;
-   position: relative;
-   width: auto;
+.widget .container.primary h2{
    text-align: center;
-   font-size: 5rem;
-   font-weight: 600;
    transition: opacity 0.3s ease-in-out; /* Smooth transition for text change */
    opacity: 1;
-
 }
 
-.compass .container.primary p{
+.widget .container.primary p{
 color: white;
 }
 
-.compass .container.secondary{
+.widget .container.secondary{
     flex: 2;
     display: flex;
     flex-direction: row;
@@ -96,16 +56,16 @@ color: white;
 
 
 
-.compass .container.secondary p{
+.widget .container.secondary p{
     color: white;
     text-align: center;
 }
 
-.compass .container.secondary p.heading{
+.widget .container.secondary p.heading{
     color:var(--red);
 }
 
-.compass .container.secondary .line{
+.widget .container.secondary .line{
 width: 1px;
 background:white;
 margin: auto;
@@ -113,7 +73,7 @@ height: 1rem;
 flex: none;
 }
 
-.compass .container.secondary .line:nth-of-type(even){
+.widget .container.secondary .line:nth-of-type(even){
     height: 0.75rem;
 }
 
@@ -128,7 +88,7 @@ flex: none;
     color: black;
 }
 
-.compass .container.tertiary{
+.widget .container.tertiary{
     display: flex;
     flex-direction: row;
     gap:1rem;
@@ -136,13 +96,13 @@ flex: none;
     background: none;
 }
 
-.compass .container.tertiary button{
+.widget .container.tertiary button{
     flex: 1;
     border-radius: 0.5rem;
     border: none;
     transition: all 200ms ease;
 }
 
-.compass .container.tertiary button:hover{
+.widget .container.tertiary button:hover{
     background:#c9c9c9
 }
