@@ -7,7 +7,9 @@ body{
 .dark-wrapper{
     height: 100vh;
     background: black;
-    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .compass{

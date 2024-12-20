@@ -1,1 +1,0 @@
-var now = new Date().getTime();
