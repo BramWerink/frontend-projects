@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Compass</title>
+        <title>Radial-timer</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,22 +16,9 @@
     <body>
         <div class="dark-wrapper">
             <div class="widget">
-                <div class="container primary">
-                    <h2 class="title" id="current-heading"></h2>
-                    <p id="saved-heading"></p>
-                    <!-- ADD DIFFERENCE BETWEEN SAVED AND ACTUAL HEADING -->
-                    <p id="info">use shift + scroll to scroll</p>
-                </div>
-
-                <div class="container secondary" id="scrollable"></div>
-                <div class="container tertiary">
-                    <button onclick="saveHeading()">Set heading</button>
-                    <button onclick="clearHeading()">Clear</button>
-
-                </div>
+               <p id="time" class="title"></p>
             </div>
         </div>
         <script src="script.js"></script>
-
     </body>
 </html>
