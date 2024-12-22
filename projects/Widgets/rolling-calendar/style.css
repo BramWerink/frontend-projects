@@ -9,6 +9,11 @@
     width: 100%;
 }
 
+#current-time span{
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
 .container.primary .hour{
     background: hsl(0, 0%, 40%);
     height: 100%;
@@ -17,7 +22,20 @@
     flex-shrink: 0;
 }
 
-.container.primary .hour-block .hour{
-    font-weight:600;
+.container.primary .hour .event{
+    background: var(--main);
+    width: 80%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.container.primary .hour .event .text{
+    padding: 0.5rem 0 0 0.5rem;
+    position: relative;
+}
+
+.container.primary .hour .event #time,#name{
     color: white;
+    font-size: 1rem;
+    font-weight: 600;;
 }
