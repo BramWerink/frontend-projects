@@ -1,0 +1,28 @@
+h1{
+    font-family:inter;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.frame{
+    background: white;
+    width:20rem;
+    height: 40rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.frame select{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
