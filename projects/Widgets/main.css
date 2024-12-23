@@ -39,7 +39,6 @@ body{
 .widget .container{
     background: hsl(0, 0%, 20%);
     border-radius:1rem;
-     overflow: hidden;
 }
 
 .title{

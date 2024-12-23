@@ -1,13 +1,22 @@
 .container.primary{
-    flex:1;
     padding:0.5rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 0.5rem;
     max-height: 5rem;
     width: 100%;
     position: relative;
+    flex:1;
+    overflow: hidden;
+
+}
+
+.container.primary .hours-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 100%;
+    margin-left: -50px;
+    gap: 0.5rem;
+
+
 }
 
 .container.primary .line{
