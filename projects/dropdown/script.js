@@ -46,6 +46,7 @@ function updateBingoEffect() {
 }
 
 
+
 function clearOption(){
     savedOption === ""; // Clear the saved option
     selectElement.value = "";
