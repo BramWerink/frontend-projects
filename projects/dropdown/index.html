@@ -10,13 +10,17 @@
     <body>
        
             <div class="frame">
-                <h1 class="title">I would like to learn&nbsp<span id="selected-option"></span></h1>
-                <select name="list" class="list">
-                </select>
-    
-                <button onclick="saveOption()">Choose item</button>
-                <button onclick="clearOption()">Clear</button>
-
+                <div class="content">
+                    <h1 class="title">I would like to learn&nbsp<span id="selected-option"></span></h1>
+                    <select name="list" class="list">
+                    </select>
+        
+                    <button onclick="saveOption()" id="choose">Choose item</button>
+                    <button onclick="clearOption()" id="clear">Clear</button>
+                </div>
+                <div class="bottom-row">
+                    <button id="continue">Continue</button>
+                </div>
             </div>
     
 
