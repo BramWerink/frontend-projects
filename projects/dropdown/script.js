@@ -17,11 +17,19 @@ function saveOption(){
 
 let page = list.length
 
-setInterval(function(){
+
+function updateBingoEffect(){
     let bingoEffect = list[page]
     page = (page + 1) % list.length;
     console.log(bingoEffect)
     document.getElementById("selected-option").innerHTML = bingoEffect
-},1000);
+}
+
+setInterval(updateBingoEffect, 1000);
+
+
+// if savedOption = empty{
+// setInterval(updateBingoEffect, 1000);
+// } else {  }
 
 
