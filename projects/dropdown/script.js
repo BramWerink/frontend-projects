@@ -15,15 +15,13 @@ function saveOption(){
     document.getElementById("selected-option").innerHTML = savedOption
 }
 
-let page = 0;
+let page = list.length
+
 setInterval(function(){
-    selectElement.value = list[page]
-    page = (page + 1);
-    document.getElementById("selected-option").innerHTML = selectElement.value;
+    let bingoEffect = list[page]
+    page = (page + 1) % list.length;
+    console.log(bingoEffect)
+    document.getElementById("selected-option").innerHTML = bingoEffect
+},1000);
 
-    console.log(selectElement.value);
-}, 1000);
 
-// todo
-// 1. oops, the dropdown now also changes.
-// 2. Stop looping when selection is made
