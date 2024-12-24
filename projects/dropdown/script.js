@@ -45,16 +45,17 @@ function updateBingoEffect() {
     document.getElementById("selected-option").innerHTML = bingoEffect;
 }
 
-
-
 function clearOption(){
-    savedOption === ""; // Clear the saved option
-    selectElement.value = "";
-    document.getElementById("selected-option").innerHTML = ""
+    savedOption = ""; // Clear the saved option
+    selectElement.value = ""; // Reset the select value
+    document.getElementById("selected-option").innerHTML = ""; // Clear the displayed value
 
-    startBingoEffect(); // Start the bingo effect again
+    // Clear the existing interval (if any)
+    if (intervalId) {
+        clearInterval(intervalId);
+    }
+
+    // Start the bingo effect again
+    startBingoEffect();
 }
 
-// Example of a button that triggers saveOption
-// Add a button in your HTML like:
-// <button onclick="saveOption()">Save Option</button>
