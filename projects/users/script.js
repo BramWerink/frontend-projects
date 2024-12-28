@@ -24,7 +24,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         sector: document.querySelector('select[name="sector"]').value
     };
 
-    let passwordCheck = document.querySelector('input[name="password2"]').value;
+    let passwordCheck = document.querySelector('input[name="password-check"]').value;
 
     if (user.password !== passwordCheck) {
         alert('Passwords do not match');
@@ -33,6 +33,6 @@ document.querySelector('form').addEventListener('submit', function(event) {
     console.log(user);
 });
 
-
-// if submit is pressed -> user object in local storage opslaan
-// if submit is pressed pasword !=== password2 -> error message
+array.forEach(user => {
+    
+});
