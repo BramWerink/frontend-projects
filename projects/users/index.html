@@ -8,37 +8,47 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Sign up</h1>
-        <form>
-            <label for="fname">First name</label>
-            <input name="fname" type="text" placeholder="First name">
+        <div class="wrapper">
+            <form>
+            <h2>Sign up</h2>
+                <label for="fname">First name</label>
+                <input name="fname" type="text" placeholder="First name">
 
-            <label for="surname">Last name</label>
-            <input name="surname" type="text" placeholder="Surname">
+                <label for="surname">Last name</label>
+                <input name="surname" type="text" placeholder="Surname">
 
-            <label for="email">Email</label>
-            <input name="email" type="text" placeholder="Email">
+                <label for="email">Email</label>
+                <input name="email" type="text" placeholder="Email">
 
-            <label for="username">Username</label>
-            <input name="username" type="text" placeholder="Username">
+                <label for="username">Username</label>
+                <input name="username" type="text" placeholder="Username">
 
-            <label for="password">Password</label>
-            <input name="password" type="password" placeholder="Password">
+                <label for="password">Password</label>
+                <input name="password" type="password" placeholder="Password">
 
-            <label for="password-check">Repeat password</label>
-            <input name="password-check" type="password" placeholder="Password">
+                <label for="password-check">Repeat password</label>
+                <input name="password-check" type="password" placeholder="Password">
 
-            <label for="sector">Choose your sector</label>
-            <select name="sector">
-                <option value="construction">Construction</option>
-                <option value="healthcare">Healthcare</option>
-                <option value="transport">Transport</option>
-                <option value="Food">Food & safety</option>
-                <option value="it">IT</option>
-            </select>
+                <label for="sector">Choose your sector</label>
+                <select name="sector">
+                    <option value="construction">Construction</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="transport">Transport</option>
+                    <option value="Food">Food & safety</option>
+                    <option value="it">IT</option>
+                </select>
 
-            <button type="submit">Continue</button>
-        </form>
+                <button type="submit">Continue</button>
+            </form>
+
+            <div class="preview">
+                <h2>Your profile</h2>
+                <p id="name"></p>
+                <p id="email"></p>
+                <p id="username"></p>
+                <p id="sector"></p>
+            </div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>

@@ -28,11 +28,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     if (user.password !== passwordCheck) {
         alert('Passwords do not match');
-    } 
+    } else{
+        document.getElementById('name').innerHTML = user.name + "&nbsp" + user.surname;
+        document.getElementById('email').innerHTML = user.email;
+        document.getElementById('username').innerHTML = user.username;
+        document.getElementById('sector').innerHTML = user.sector;
+    }
 
-    console.log(user);
 });
 
-array.forEach(user => {
-    
-});
